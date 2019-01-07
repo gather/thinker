@@ -1,15 +1,18 @@
 {
   "name": "thinker",
   "description": "A RethinkDB management tool",
-  "version": "0.9.0",
-  "homepage": "https://github.com/internalfx/thinker",
+  "version": "2.0.0",
+  "homepage": "https://github.com/gather/thinker",
   "author": "InternalFX",
+  "engines": {
+    "node": "^8.14"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/internalfx/thinker.git"
+    "url": "git+https://github.com/gather/thinker.git"
   },
   "bugs": {
-    "url": "https://github.com/internalfx/thinker/issues"
+    "url": "https://github.com/gather/thinker/issues"
   },
   "license": "ISC",
   "keywords": [
@@ -20,7 +23,7 @@
   "bin": {
     "thinker": "./bin/thinker"
   },
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
     "test": "echo 'no tests yet'"
   },
@@ -30,14 +33,22 @@
     "co-parallel": "1.0.0",
     "colors": "1.1.2",
     "inquirer": "1.1.2",
-    "lodash": "4.14.0",
+    "lodash": "^4.17.11",
     "minimist": "1.2.0",
-    "moment": "2.14.1",
+    "moment": "^2.23.0",
     "require-all": "2.0.0",
     "rethinkdbdash": "2.3.31",
     "verbalize": "0.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "p-queue": "^3.0.0"
+  },
   "standard": {
     "ignore": [
       "/lib/hash.js"

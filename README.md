@@ -109,3 +109,7 @@ To copy specific tables by specific company ids you would do the following:
 ```
 ./bin/thinker sync --sh <FROM> --th <TO> --sd gather --td gather --c sa0oiol9,phbq3484 --s --pt accounts,bookings,charges,comments,contacts,locations,logins,messages,policies,rooms,templates,users
 ```
+
+## Insights 
+
+  - Too many connections on the rethinkdbdash buffer may cause ECONNRESETS on the start
